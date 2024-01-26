@@ -117,8 +117,8 @@ class JetMETCorrector(object):
                 # set the name of the tarball with a dummy run number
                 (0, 'Summer19UL16APV_V7_DATA'),
                 # (start run number (inclusive), 'tag name')
-                (272007, 'Summer19UL16APV_RunBCD_V7_DATA'),
-                (276831, 'Summer19UL16APV_RunEF_V7_DATA'),
+                (272007, 'Summer19UL16APV_RunBCD_V7_DATA'), # not found in https://github.com/cms-nanoAOD/nanoAOD-tools/tree/master/data/jme
+                (276831, 'Summer19UL16APV_RunEF_V7_DATA'), # not found in https://github.com/cms-nanoAOD/nanoAOD-tools/tree/master/data/jme
             )
         elif self.year == 2016:
             # hack, actually UL2016 postVFP
@@ -128,20 +128,20 @@ class JetMETCorrector(object):
                 # set the name of the tarball with a dummy run number
                 (0, 'Summer19UL16_V7_DATA'),
                 # (start run number (inclusive), 'tag name')
-                (277772, 'Summer19UL16_RunFGH_V7_DATA'),
+                (277772, 'Summer19UL16_RunFGH_V7_DATA'),  # not found in https://github.com/cms-nanoAOD/nanoAOD-tools/tree/master/data/jme
             )
         elif self.year == 2017:
-            self.globalTag = 'Summer19UL17_V6_MC'
+            self.globalTag = 'Summer19UL17_V5_MC'
             self.jerTag = 'Summer19UL17_JRV2_MC'
             self.dataTags = (
                 # set the name of the tarball with a dummy run number
-                (0, 'Summer19UL17_V6_DATA'),
+                (0, 'Summer19UL17_V5_DATA'),
                 # (start run number (inclusive), 'tag name')
-                (297020, 'Summer19UL17_RunB_V6_DATA'),
-                (299337, 'Summer19UL17_RunC_V6_DATA'),
-                (302030, 'Summer19UL17_RunD_V6_DATA'),
-                (303435, 'Summer19UL17_RunE_V6_DATA'),
-                (304911, 'Summer19UL17_RunF_V6_DATA'),
+                (297020, 'Summer19UL17_RunB_V5_DATA'),
+                (299337, 'Summer19UL17_RunC_V5_DATA'),
+                (302030, 'Summer19UL17_RunD_V5_DATA'),
+                (303435, 'Summer19UL17_RunE_V5_DATA'),
+                (304911, 'Summer19UL17_RunF_V5_DATA'),
             )
         elif self.year == 2018:
             self.globalTag = 'Summer19UL18_V5_MC'
